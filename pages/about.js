@@ -1,5 +1,4 @@
 import Layout from '../components/Layout'
-import '../styles/flag.css'
 
 export default function About() {
   return (
