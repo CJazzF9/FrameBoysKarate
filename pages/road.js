@@ -30,7 +30,7 @@ export default function Journey() {
     {
       date: "June 2025",
       title: "Congo Tournament",
-      description: "A new international test of skill awaits in June — the Congo Tournament."
+      description: "A new test of skill awaits in June — the Congo Tournament."
     },
     {
       date: "Jul–Aug 2025",
