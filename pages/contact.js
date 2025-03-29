@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="flag-bg"></div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" className="space-y-4">
+          <form name="contact" netlify method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" className="space-y-4">
             <input type="hidden" name="form-name" value="contact" />
             <input type="hidden" name="bot-field" />
             <div>
