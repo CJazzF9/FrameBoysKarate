@@ -7,7 +7,7 @@ export default function Sponsors() {
         <div className="flag-bg"></div>
         <div className="relative z-10 max-w-4xl mx-auto p-6">
           <h2 className="text-3xl font-bold mb-6 text-center">Our Sponsors</h2>
-          <p>This is the sponsors page. Replace this with actual content soon.</p>
+          <p>This page is under construction. Stay tuned!</p>
         </div>
       </div>
     </Layout>
