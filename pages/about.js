@@ -4,23 +4,33 @@ export default function About() {
   return (
     <Layout>
       <div className="max-w-4xl mx-auto p-6 space-y-10">
-        <h2 className="text-3xl font-bold text-center">Meet the Frame Brothers</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">Meet the Frame Brothers</h2>
+
         <div className="grid sm:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="/images/brother1.jpg" alt="Brother 1" className="rounded-lg shadow-lg" />
+            <img src="/images/ethan.jpg" alt="Ethan performing at Team USA tryouts" className="rounded-lg shadow-lg" />
           </div>
           <div>
-            <h3 className="text-xl font-bold">Brother 1</h3>
-            <p>Placeholder bio for Brother 1. Will be updated with real info.</p>
+            <h3 className="text-xl font-bold">Ethan</h3>
+            <p>
+              Ethan is a dedicated martial artist whose precision and passion shine through in every kata. 
+              He’s earned his spot on Team USA through relentless effort, training, and a deep love for the art of karate.
+              Watch for his strong stances and fearless energy as he prepares to take on the world in Germany!
+            </p>
           </div>
         </div>
+
         <div className="grid sm:grid-cols-2 gap-10 items-center">
           <div className="order-2 sm:order-1">
-            <h3 className="text-xl font-bold">Brother 2</h3>
-            <p>Placeholder bio for Brother 2. Will be updated with real info.</p>
+            <img src="/images/ryan.jpg" alt="Ryan performing at Team USA tryouts" className="rounded-lg shadow-lg" />
           </div>
           <div className="order-1 sm:order-2">
-            <img src="/images/brother2.jpg" alt="Brother 2" className="rounded-lg shadow-lg" />
+            <h3 className="text-xl font-bold">Ryan</h3>
+            <p>
+              Ryan brings intensity, focus, and creativity to every performance. With years of experience and 
+              a constant drive to improve, he’s proven himself as one of the top competitors in his age group. 
+              Representing Team USA is not just a goal — it’s a mission he’s pursuing with all his heart.
+            </p>
           </div>
         </div>
       </div>
