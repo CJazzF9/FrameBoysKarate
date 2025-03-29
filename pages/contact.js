@@ -3,16 +3,13 @@ import Layout from '../components/Layout'
 export default function Contact() {
   return (
     <Layout>
-      <div className="max-w-xl mx-auto p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
-        <form name="contact" method="POST" data-netlify="true" className="space-y-4">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="text" name="name" placeholder="Your Name" required className="w-full border p-2 rounded" />
-          <input type="email" name="email" placeholder="Your Email" required className="w-full border p-2 rounded" />
-          <textarea name="message" placeholder="Your Message" rows="5" required className="w-full border p-2 rounded"></textarea>
-          <button type="submit" className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Send</button>
-        </form>
+      <div className="relative overflow-hidden">
+        <div className="flag-bg"></div>
+        <div className="relative z-10 max-w-4xl mx-auto p-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+          <p>This is the contact page content. Replace with actual details.</p>
+        </div>
       </div>
     </Layout>
-  );
+  )
 }
