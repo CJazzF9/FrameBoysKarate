@@ -5,12 +5,15 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const images = [
-    '/images/gallery/ethan1.jpg',
-    '/images/gallery/ethan2.jpg',
-    '/images/gallery/ryan1.jpg',
-    '/images/gallery/ryan2.jpg',
-    '/images/gallery/both1.jpg',
-    '/images/gallery/both2.jpg',
+    '/images/gallery/ethan-battle.jpg',
+    '/images/gallery/ethan-bow.jpg',
+    '/images/gallery/ethan-kick.jpg',
+    '/images/gallery/ryan-bow-wku.jpg',
+    '/images/gallery/ryan-punch.jpg',
+    '/images/gallery/ryan-bow.jpg',
+    '/images/gallery/ethan-ryan-orange.jpg',
+    '/images/gallery/ethan-ryan-sharkcity.jpg',
+    '/images/gallery/ethan-ryan-whitebelt.jpg',
   ]
 
   return (
