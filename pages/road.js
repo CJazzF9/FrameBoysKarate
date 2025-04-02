@@ -1,25 +1,104 @@
-import Layout from '../components/Layout'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+const events = [
+  {
+    date: "Jan 18th",
+    title: "Rocky Mountain Open",
+    description:
+      "Both Ethan and Ryan won multiple medals and Ethan won Grand Champion in his division.",
+    image: "/images/journey/Rocky_Mountain.jpg",
+    link: "https://utahsportkarateleague.com/schedule",
+  },
+  {
+    date: "Feb 18th",
+    title: "Belt Test",
+    description: "Ryan promoted to Blue and Ethan to Green.",
+    image: "/images/journey/Tobins2.jpg",
+    link: "https://tobinselite.com/",
+  },
+  {
+    date: "Mar 15th",
+    title: "WKU Tryouts",
+    description: "Both Ethan and Ryan made Team USA!",
+    image: "/images/journey/WKU_USA.jpg",
+    link: "https://www.wkuworldusa.com/",
+  },
+  {
+    date: "Mar 22nd",
+    title: "Battle of the Champions",
+    description:
+      "Both Ethan and Ryan won multiple medals. Ethan won Grand Champion and Ryan got second place as the youngest in the division.",
+    image: "/images/journey/Battle_of_Champ.jpg",
+    link: "https://utahsportkarateleague.com/schedule",
+  },
+  {
+    date: "Apr - May",
+    title: "Training + Belt Tests",
+    description: "Training and preparing new material and belt tests.",
+    image: "/images/journey/Tobins2.jpg",
+    link: "https://tobinselite.com/",
+  },
+  {
+    date: "June 14th",
+    title: "Kongo Tournament",
+    description: "Competitive action in Farmington, UT.",
+    image: "/images/journey/Kongo.jpg",
+    link: "https://utahsportkarateleague.com/schedule",
+  },
+  {
+    date: "July - Aug",
+    title: "Summer Training",
+    description: "Continued training and preparation for upcoming events.",
+    image: "/images/journey/Tobins2.jpg",
+    link: "https://tobinselite.com/",
+  },
+  {
+    date: "Sept 12-13",
+    title: "Valor Showdown Tournament",
+    description: "Ryan and Ethan compete again in Utah!",
+    image: "/images/journey/Valor.jpg",
+    link: "https://utahsportkarateleague.com/schedule",
+  },
+  {
+    date: "Oct",
+    title: "WKU World Championship",
+    description: "Ethan and Ryan head to Germany to represent Team USA!",
+    image: "/images/journey/WKU_Germany.jpg",
+    link: "https://www.wkuworldusa.com/",
+  },
+];
 
 export default function Road() {
   return (
-    <Layout>
-      <div className="relative overflow-hidden min-h-screen">
-        <div className="flag-bg"></div>
-        <div className="relative z-10 max-w-3xl mx-auto px-6 py-12">
-          <h2 className="text-3xl font-bold text-center mb-10">The Journey</h2>
-          <ul className="space-y-6 text-sm">
-            <li><strong>✅ Jan 18:</strong> Rocky Mountain Open – Both medaled, Ethan won Grand Champion</li>
-            <li><strong>✅ Feb 18:</strong> Belt Test – Ryan promoted to Blue, Ethan to Green</li>
-            <li><strong>✅ Mar 15:</strong> WKU Tryouts – Both made Team USA</li>
-            <li><strong>✅ Mar 22:</strong> Battle of Champions – Both medaled, Ethan GC, Ryan 2nd youngest in division</li>
-            <li><strong>⏳ Apr–May:</strong> Training and preparing new material & belt tests</li>
-            <li><strong>📍 June:</strong> Congo Tournament</li>
-            <li><strong>💪 July–Aug:</strong> Training & preparation</li>
-            <li><strong>🌍 Sept:</strong> Valor Showdown Tournament</li>
-            <li><strong>🇩🇪 Oct:</strong> WKU World Tournament – Germany</li>
-          </ul>
-        </div>
+    <div className="bg-white bg-cover min-h-screen py-10 px-4 sm:px-10">
+      <h1 className="text-4xl text-center font-bold text-red-600 mb-10">
+        Journey to Germany
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        {events.map((event, index) => (
+          <div
+            key={index}
+            className="bg-white bg-opacity-90 border border-gray-200 shadow-md rounded-lg overflow-hidden p-4 flex flex-col items-center text-center"
+          >
+            <Link href={event.link} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={event.image}
+                alt={event.title}
+                width={400}
+                height={400}
+                className="rounded-md object-contain"
+              />
+            </Link>
+            <h3 className="text-xl font-bold text-gray-800 mt-4">{event.date}</h3>
+            <h4 className="text-lg font-semibold text-blue-600 mt-1">
+              {event.title}
+            </h4>
+            <p className="text-sm text-gray-700 mt-2">{event.description}</p>
+          </div>
+        ))}
       </div>
-    </Layout>
-  )
+    </div>
+  );
 }
