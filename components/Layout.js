@@ -1,30 +1,40 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-800">
-      <header className="sticky top-0 z-50 bg-blue-700 text-white shadow-md">
-        <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-          <div className="text-lg font-extrabold tracking-wide">
-            🥋 Frame Bros Karate
-          </div>
-          <nav>
-            <ul className="flex gap-4 text-sm sm:text-base font-medium">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/road">Journey</Link></li>
-              <li><Link href="/support">Support</Link></li>
-              <li><Link href="/sponsors">Sponsors</Link></li>
-              <li><Link href="/gallery">Gallery</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
+    <>
+      <Head>
+        <title>Frame Bros Karate</title>
+        <meta name="description" content="Support the Frame Brothers as they represent Team USA in the 2025 World Karate Championship." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      {/* Header */}
+      <header className="bg-blue-600 text-white w-full">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+          <h1 className="font-bold text-sm sm:text-base">🥋 Frame Bros Karate</h1>
+          <nav className="space-x-2 text-xs sm:text-sm">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/support">Support</Link>
+            <Link href="/sponsors">Sponsors</Link>
+            <Link href="/gallery">Gallery</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
       </header>
-      <main className="flex-grow">{children}</main>
-      <footer className="bg-blue-900 text-white text-center p-2 text-sm">
-        &copy; 2025 Frame Brothers Karate. All rights reserved.
+
+      {/* Main Content */}
+      <main className="relative z-10">{children}</main>
+
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white text-xs text-center py-3 w-full">
+        <div className="max-w-7xl mx-auto px-4">
+          © 2025 Frame Brothers Karate. All rights reserved.
+        </div>
       </footer>
-    </div>
-  );
+    </>
+  )
 }
