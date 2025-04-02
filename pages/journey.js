@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Road() {
+export default function Journey() {
   const events = [
     {
       date: 'Jan 18th',
