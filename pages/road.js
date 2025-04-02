@@ -84,8 +84,8 @@ export default function Road() {
                 <Image
                   src={event.image}
                   alt={event.title}
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                   className="rounded shadow-md hover:scale-105 transition-transform duration-300"
                 />
               </Link>
