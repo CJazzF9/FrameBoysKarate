@@ -73,9 +73,11 @@ export default function Journey() {
 
   return (
     <Layout>
-      <div className="flag-background min-h-screen px-6 py-12">
+     <div className="relative overflow-hidden min-h-screen">
+      <div className="flag-bg"></div>
+       <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 text-center">
         <h1 className="text-3xl font-bold text-center mb-10">The Journey to Germany</h1>
-        <div className="space-y-12 max-w-4xl mx-auto">
+         <div className="space-y-12 max-w-4xl mx-auto">
           {events.map((event, idx) => (
             <div
               key={idx}
