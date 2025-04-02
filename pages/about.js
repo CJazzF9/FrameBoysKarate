@@ -24,7 +24,7 @@ export default function About() {
               <h3 className="mt-4 text-xl font-semibold text-blue-800">Ryan Frame</h3>
               <p className="text-sm mt-2">
                 Ryan is a dedicated young martial artist with a blue belt. He's known for his precision,
-                determination, and passion for karate. At only 10 years old, he’s one of the youngest athletes on Team USA.
+                determination, and passion for karate. At only 8 years old, he’s one of the youngest athletes on Team USA.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ export default function About() {
               </div>
               <h3 className="mt-4 text-xl font-semibold text-blue-800">Ethan Frame</h3>
               <p className="text-sm mt-2">
-                Ethan, age 8, is a green belt who recently won Grand Champion at multiple tournaments.
+                Ethan, age 10, is a green belt who recently won Grand Champion at multiple tournaments.
                 He thrives in traditional kata and weapons divisions, and is excited to represent Team USA in Germany.
               </p>
             </div>
