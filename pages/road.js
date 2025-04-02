@@ -8,21 +8,21 @@ const events = [
     title: "Rocky Mountain Open",
     description:
       "Both Ethan and Ryan won multiple medals and Ethan won Grand Champion in his division.",
-    image: "/images/journey/Rocky_Mountain.jpg",
+    image: "public/images/gallery/Rocky_Mountain.jpg",
     link: "https://utahsportkarateleague.com/schedule",
   },
   {
     date: "Feb 18th",
     title: "Belt Test",
     description: "Ryan promoted to Blue and Ethan to Green.",
-    image: "/images/journey/Tobins2.jpg",
+    image: "public/images/gallery/Tobins2.jpg",
     link: "https://tobinselite.com/",
   },
   {
     date: "Mar 15th",
     title: "WKU Tryouts",
     description: "Both Ethan and Ryan made Team USA!",
-    image: "/images/journey/WKU_USA.jpg",
+    image: "public/images/gallery/WKU_USA.jpg",
     link: "https://www.wkuworldusa.com/",
   },
   {
@@ -30,42 +30,42 @@ const events = [
     title: "Battle of the Champions",
     description:
       "Both Ethan and Ryan won multiple medals. Ethan won Grand Champion and Ryan got second place as the youngest in the division.",
-    image: "/images/journey/Battle_of_Champ.jpg",
+    image: "public/images/gallery/Battle_of_Champ.jpg",
     link: "https://utahsportkarateleague.com/schedule",
   },
   {
     date: "Apr - May",
     title: "Training + Belt Tests",
     description: "Training and preparing new material and belt tests.",
-    image: "/images/journey/Tobins2.jpg",
+    image: "public/images/gallery/Tobins2.jpg",
     link: "https://tobinselite.com/",
   },
   {
     date: "June 14th",
     title: "Kongo Tournament",
     description: "Competitive action in Farmington, UT.",
-    image: "/images/journey/Kongo.jpg",
+    image: "public/images/gallery/Kongo.jpg",
     link: "https://utahsportkarateleague.com/schedule",
   },
   {
     date: "July - Aug",
     title: "Summer Training",
     description: "Continued training and preparation for upcoming events.",
-    image: "/images/journey/Tobins2.jpg",
+    image: "public/images/gallery/Tobins2.jpg",
     link: "https://tobinselite.com/",
   },
   {
     date: "Sept 12-13",
     title: "Valor Showdown Tournament",
     description: "Ryan and Ethan compete again in Utah!",
-    image: "/images/journey/Valor.jpg",
+    image: "public/images/gallery/Valor.jpg",
     link: "https://utahsportkarateleague.com/schedule",
   },
   {
     date: "Oct",
     title: "WKU World Championship",
     description: "Ethan and Ryan head to Germany to represent Team USA!",
-    image: "/images/journey/WKU_Germany.jpg",
+    image: "/public/images/gallery/WKU_Germany.jpg",
     link: "https://www.wkuworldusa.com/",
   },
 ];
@@ -86,8 +86,8 @@ export default function Road() {
               <Image
                 src={event.image}
                 alt={event.title}
-                width={400}
-                height={400}
+                width={200}
+                height={200}
                 className="rounded-md object-contain"
               />
             </Link>
