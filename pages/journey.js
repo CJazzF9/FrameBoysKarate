@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import '../styles/flag.css';
 
 export default function Journey() {
   const events = [
