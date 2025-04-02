@@ -73,31 +73,33 @@ export default function Journey() {
 
   return (
     <Layout>
-     <div className="relative overflow-hidden min-h-screen">
-      <div className="flag-bg"></div>
-       <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 text-center">
-        <h1 className="text-3xl font-bold text-center mb-10">The Journey to Germany</h1>
-         <div className="space-y-12 max-w-4xl mx-auto">
-          {events.map((event, idx) => (
-            <div
-              key={idx}
-              className="bg-white/90 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200"
-            >
-              <h2 className="text-xl font-semibold mb-1">{event.date}: {event.title}</h2>
-              <p className="mb-4 text-sm md:text-base">{event.description}</p>
-              <Link href={event.url} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={event.image}
-                  alt={event.title}
-                  width={300}
-                  height={150}
-                  className="rounded shadow-md hover:scale-105 transition-transform mx-auto"
-                />
-              </Link>
-            </div>
-          ))}
+      <div className="relative overflow-hidden min-h-screen">
+        <div className="flag-background absolute inset-0 z-0"></div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 text-center">
+          <h1 className="text-3xl font-bold text-center mb-10">The Journey to Germany</h1>
+          <div className="space-y-12 max-w-4xl mx-auto">
+            {events.map((event, idx) => (
+              <div
+                key={idx}
+                className="bg-white/90 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200"
+              >
+                <h2 className="text-xl font-semibold mb-1">{event.date}: {event.title}</h2>
+                <p className="mb-4 text-sm md:text-base">{event.description}</p>
+                <Link href={event.url} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={event.image}
+                    alt={event.title}
+                    width={300}
+                    height={150}
+                    className="rounded shadow-md hover:scale-105 transition-transform mx-auto"
+                  />
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Layout>
   );
-}
+} 
