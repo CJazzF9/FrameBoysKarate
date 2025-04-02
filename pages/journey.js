@@ -74,7 +74,7 @@ export default function Journey() {
   return (
     <Layout>
       <div className="relative overflow-hidden min-h-screen">
-        <div className="flag-background absolute inset-0 z-0"></div>
+        <div className="flag-bg absolute inset-0 z-0"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 text-center">
           <h1 className="text-3xl font-bold text-center mb-10">The Journey to Germany</h1>
