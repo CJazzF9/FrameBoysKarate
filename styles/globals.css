@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply global font styles */
+body {
+  @apply font-body;
+}
+
+h1, h2, h3, h4 {
+  @apply font-headline;
+}
