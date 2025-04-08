@@ -1,3 +1,16 @@
+import Layout from '../components/Layout'
+import Image from 'next/image'
+import Link from 'next/link'
+
+export default function Sponsors() {
+  return (
+    <Layout>
+      <div className="relative overflow-hidden min-h-screen">
+        <div className="flag-bg"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 text-center">
+          <h2 className="text-3xl font-bold mb-8">Our Sponsors</h2>
+          <p className="mb-8">We’re incredibly grateful to the organizations and individuals who support Ethan and Ryan on their journey to the world stage.</p>
+
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
   {/* Gold Column */}
   <div>
