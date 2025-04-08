@@ -45,6 +45,18 @@ export default function Sponsors() {
               </div>
             </div>
 
+            <div>
+              <Link href="https://www.hug-hes.com/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/gallery/Hug-hes.png"
+                  alt="Hug-Hes Cafe"
+                  width={200}
+                  height={100}
+                  className="mx-auto mb-2 rounded shadow"
+                />
+                <p className="text-sm">Hug-Hes Cafe</p>
+              </div>
+
             {/* Bronze Sponsors */}
             <div>
               <h3 className="text-xl font-bold text-orange-600">🥉 Bronze Sponsors</h3>
