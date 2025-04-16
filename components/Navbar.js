@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react' // Install: npm install lucide-react
 
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false)
@@ -38,21 +37,22 @@ export default function Navbar() {
             🥋 Frame Brothers Karate
           </h1>
 
-          {/* Hamburger Icon */}
+          {/* Hamburger Icon (Emoji Fallback) */}
           {isMobile && (
             <button
-              className="text-white focus:outline-none"
+              className="text-white text-3xl focus:outline-none"
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle Menu"
             >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              {menuOpen ? '✖️' : '☰'}
             </button>
           )}
         </div>
 
-        {/* Dragon Banner (Visible on all screen sizes now) */}
+        {/* Dragon Banner */}
         <div className="w-full md:flex-1 flex justify-center overflow-hidden">
           <Image
-            src="/images/final_american_dragon_banner_1200x400.png"
+            src="/images/Dragon_Title_Bar.png"
             alt="Dragon Banner"
             width={600}
             height={100}
@@ -61,7 +61,7 @@ export default function Navbar() {
           />
         </div>
 
-        {/* Navigation Menu */}
+        {/* Navigation Links */}
         <nav
           className={`w-full md:w-auto flex-col md:flex-row md:flex md:justify-end gap-3 transition-all duration-300 ease-in-out ${
             isMobile ? (menuOpen ? 'flex' : 'hidden') : 'flex'
