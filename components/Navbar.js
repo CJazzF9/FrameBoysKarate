@@ -15,25 +15,28 @@ export default function Navbar() {
 
   return (
     <header className="bg-black text-white shadow-md w-full">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row items-center md:justify-between md:gap-6">
-        {/* Left title */}
-        <div className="flex items-center space-x-4 mb-2 md:mb-0">
-          <h1 className="font-bold text-sm sm:text-base whitespace-nowrap">🥋 Frame Brothers Karate</h1>
+      <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        {/* Left: Title */}
+        <div className="md:w-1/4 flex justify-start">
+          <h1 className="font-bold text-xl sm:text-2xl whitespace-nowrap ml-2">
+            🥋 Frame Brothers Karate
+          </h1>
         </div>
 
-        {/* Center-stretched Dragon Image */}
-        <div className="w-full md:flex-1 md:flex md:justify-center mb-2 md:mb-0">
+        {/* Center: Dragon Banner */}
+        <div className="hidden md:flex md:w-2/4 justify-center items-center overflow-hidden">
           <Image
             src="/images/Dragon_Title_Bar.png"
-            alt="Dragon Logo"
-            width={400}
-            height={60}
-            className="object-contain mx-auto"
+            alt="Dragon Banner"
+            width={800}
+            height={120}
+            className="object-cover w-full h-[100px]"
           />
         </div>
 
-        {/* Navigation */}
-        <nav className="flex flex-wrap justify-center md:justify-end gap-3">
+        {/* Right: Navigation */}
+        <nav className="md:w-1/4 flex justify-end flex-wrap gap-3">
           {[
             { href: '/', label: 'Home' },
             { href: '/about', label: 'About' },
@@ -54,4 +57,4 @@ export default function Navbar() {
       </div>
     </header>
   )
-} 
+}
