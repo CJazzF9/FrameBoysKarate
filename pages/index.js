@@ -9,7 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <iframe
             className="w-full h-full object-cover"
-            src="https://youtu.be/wDthSliP7PI?autoplay=1&mute=1&controls=0&loop=1&playlist=r3f-yDNQXAQ&modestbranding=1&showinfo=0&rel=0"
+            src="https://www.youtube.com/watch?v=wDthSliP7PI?autoplay=1&mute=1&controls=0&loop=1&playlist=r3f-yDNQXAQ&modestbranding=1&showinfo=0&rel=0"
             title="Karate Highlights"
             frameBorder="0"
             allow="autoplay; fullscreen"
