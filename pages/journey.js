@@ -1,4 +1,4 @@
-// pages/journey.js
+th// pages/journey.js
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -44,7 +44,7 @@ export default function Journey() {
     {
       date: 'June',
       title: 'Kongo Tournament',
-      description: '',
+      description: 'Ethan and Ryan won multiple Gold Medals. Ryan dominated sparring with a first-place finish, and Ethan rose above all to claim Grand Champion.',
       image: '/images/gallery/Kongo.png',
       url: 'https://utahsportkarateleague.com/schedule',
     },
