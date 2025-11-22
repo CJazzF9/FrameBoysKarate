@@ -36,6 +36,10 @@ export default function Gallery() {
     'https://www.youtube.com/embed/5RYqnZwaIZs',
     'https://www.youtube.com/embed/kTfV8qNC8Zg',
     'https://www.youtube.com/embed/dp8jgbvNU3o',
+    'https://www.youtube.com/embed/tqLy4ijt77I',
+    'https://www.youtube.com/embed/W6gPzyLInRQ',
+    'https://www.youtube.com/embed/EgJrt1vAsPg',
+    'https://www.youtube.com/embed/jCIsTVQsXvU',
   ]
 
   return (
